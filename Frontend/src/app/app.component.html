@@ -1,0 +1,72 @@
+<body>
+  <header>
+    <nav class="navbar  navbar-dark bg-primary">
+      <a class="navbar-brand" href="#" style="color: aliceblue;">
+        Clearing Feed Generation
+      </a>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+
+    <div class="container-fluid inputs">
+    
+      <div class="row justify-content-center">
+
+        <div class="col-7 file-upload">
+  
+          <div class="choose">
+            <input type="file" (change)="onChange($event)" accept=".txt"> 
+          </div>
+  
+          <div class="col-2 upload">
+            <a class="btn btn-outline-primary btn-lg" (click)="onUpload()"> Upload</a>
+          </div>
+  
+        </div>
+  
+      </div>  
+  
+      <br>
+      <br>
+      <br>
+  
+      <div class="row justify-content-center">
+  
+        <div class="col-md-2 all">
+           
+          <a class="btn btn-outline-primary btn-lg "  routerLink="/archive">All Transactions</a>  
+
+        </div>
+
+        <div class="col-md-2 valid">
+  
+          <a class="btn btn-outline-success btn-lg" routerLink="/valid">Valid Transactions</a>  
+         
+        </div>
+  
+        <div class="col-md-2 invalid">
+
+          <a class="btn btn-outline-danger btn-lg" routerLink="/invalid">Invalid Transactions</a>  
+  
+        </div>
+  
+        <div class="col-md-2 Download">
+
+          <a class="btn btn-outline-info btn-lg" [href]=url download="feedfile" >Download Feed File</a>  
+  
+        </div>  
+  
+      </div>
+
+    </div>
+
+    <br> 
+    <br>
+
+    <router-outlet ></router-outlet>  
+
+  </div>
+  
+</body>
+

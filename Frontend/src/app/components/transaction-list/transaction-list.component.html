@@ -1,0 +1,69 @@
+<body>
+
+        <h2 class="display-4">All Transactions</h2>
+
+        <br>
+
+        <table class="table table-striped center">
+            <thead>
+                <th>No.</th>
+                <th>Transaction Id</th>
+                <th>Date</th>
+                <th>Payer</th>
+                <th>Payer Account</th>
+                <th>Payee</th>
+                <th>Payee Account</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </thead>
+
+            <tr *ngFor="let t of transactions">
+            <td >{{t.aid}}</td>
+            <td >{{t.atrans_ref}}</td>
+            <td >{{t.adate}}</td>
+            <td >{{t.apayerName}}</td>
+            <td >{{t.apayerAccount}}</td>
+            <td >{{t.apayeeName}}</td>
+            <td >{{t.apayeeAccount}}</td>
+            <td >{{t.aamount}}</td>
+            <td >{{t.valid}}</td>
+
+            </tr>
+        </table>
+
+</body>
+
+
+<!-- tr *ngFor="let t of transactions" >
+    <ng-container *ngIf=" {{t.valid}} : '1'; then valid; else invalid"></ng-container>
+
+        
+
+        <ng-template #valid>
+            <td class="table-success">{{t.aid}}</td>
+            <td class="table-success">{{t.atrans_ref}}</td>
+            <td class="table-success">{{t.adate}}</td>
+            <td class="table-success">{{t.apayerName}}</td>
+            <td class="table-success">{{t.apayerAccount}}</td>
+            <td class="table-success">{{t.apayeeName}}</td>
+            <td class="table-success">{{t.apayeeAccount}}</td>
+            <td class="table-success">{{t.aamount}}</td>
+            <td class="table-success">{{t.valid}}</td>
+        </ng-template>
+
+        <ng-templater #invalid>
+            <td class="table-danger">{{t.aid}}</td>
+            <td class="table-danger">{{t.atrans_ref}}</td>
+            <td class="table-danger">{{t.adate}}</td>
+            <td class="table-danger">{{t.apayerName}}</td>
+            <td class="table-danger">{{t.apayerAccount}}</td>
+            <td class="table-danger">{{t.apayeeName}}</td>
+            <td class="table-danger">{{t.apayeeAccount}}</td>
+            <td class="table-danger">{{t.aamount}}</td>
+            <td class="table-danger">{{t.valid}}</td>
+
+        </ng-templater>
+
+   
+
+</tr -->
