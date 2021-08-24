@@ -18,7 +18,7 @@ create table current_invalid(id int AUTO_INCREMENT,transaction_ref varchar(50), 
 
 create table archive(id int AUTO_INCREMENT,transaction_ref varchar(50), value_date varchar(50), payername varchar(50), payer_accno varchar(50), payeename varchar(50), payee_accno varchar(50), amount varchar(50), valid_check int,file_no int,Primary Key(id));    
 
-##To run:
+## To run:
 1. Initialise the mysql database as mentioned above.
 
 2. Open the frontEnd in Visual Studio Code with angular CLI and node.js installed.
