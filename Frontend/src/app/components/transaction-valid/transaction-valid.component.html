@@ -1,0 +1,34 @@
+<body>
+
+    <h2 class="display-4">Valid transactions </h2>
+
+<br>
+
+        <table  class="table center">
+            <tr>
+                <th>Transaction Id</th>
+                <th>Date</th>
+                <th>Payer</th>
+                <th>Payer Account</th>
+                <th>Payee</th>
+                <th>Payee Account</th>
+                <th>Amount</th>
+            </tr>
+            <tr *ngFor="let t of transactions">
+                <td>{{t.trans_ref}}</td>
+                <td>{{t.date}}</td>
+                <td>{{t.payerName}}</td>
+                <td>{{t.payerAccount}}</td>
+                <td>{{t.payeeName}}</td>
+                <td>{{t.payeeAccount}}</td>
+                <td>{{t.amount}}</td>
+            </tr>
+        </table>
+
+
+</body>
+
+
+
+
+

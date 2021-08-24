@@ -1,0 +1,15 @@
+th{
+    background-color: #5cb85c;
+    color: white;
+}
+
+.table{
+    max-width: 97%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2.display-4 {
+    padding-left: 20px;
+}

@@ -1,0 +1,83 @@
+
+.jumbotron{
+    background-color: rgb(102, 240, 245);
+   
+    
+}
+
+.inputs{
+
+    background-color: whitesmoke;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+   
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 2%;
+    border-radius: 0.5em;
+
+}
+
+
+input{
+    font-size: larger;
+    border-radius: 4px;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+}
+
+input[type=file]::-webkit-file-upload-button {
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-size: larger;
+    border: solid 1px;
+    border-color: rgb(28, 42, 100);
+    color: rgb(28, 42, 100);
+  }
+
+  input[type=file]::-webkit-file-upload-button:hover {
+
+    transition: 0.2s;
+    background-color: rgb(28, 42, 100);
+    color: white;
+   
+
+  }
+
+.all{
+    padding-right: 0px;
+}
+.valid{
+    padding-left: 10px;
+}
+
+.invalid{
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.Download{
+    padding-left: 20px;
+}
+  h1{
+        color:white;
+  }
+
+  h2.display-4{
+      padding-left: 2%;
+      padding-right: 2%;
+      font-weight: 100;
+      
+  }
+
+  .choose{
+      padding-left: 2%;
+      display: inline;
+  }
+
+  .upload{
+      display: inline;
+  }
