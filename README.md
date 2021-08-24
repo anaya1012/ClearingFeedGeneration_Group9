@@ -36,8 +36,8 @@ create table archive(id int AUTO_INCREMENT,transaction_ref varchar(50), value_da
    
    5.3 Run the command 
    
-   >ng serve in 
-   
-   terminal in VSCode
+   >ng serve 
+  
+   in terminal in VSCode
    
    5.4 Launch http://localhost:4200
