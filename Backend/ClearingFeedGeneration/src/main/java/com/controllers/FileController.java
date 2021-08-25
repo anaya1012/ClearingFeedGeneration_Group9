@@ -12,7 +12,7 @@ import com.pojo.Archive;
 import com.pojo.CurrentInvalid;
 import com.pojo.CurrentValid;
 
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class FileController {
 	
